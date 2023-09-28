@@ -1,200 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: var(--blue);
-}
-
-:root {
-  --blue: #1B2430
-}
-
-.btngroup {
-  margin-left: 450px;
-  margin-right: 450px;
-}
-
-/* Searchbar component css */
-.search {
-  position: relative;
-  color: #aaa;
-  font-size: 16px;
-}
-
-.search {
-  display: inline-block;
-}
-
-.search input {
-  width: 900px;
-  height: 45px;
-  border: 2px solid black;
-  outline: none;
-  border-radius: 5px;
-
-}
-
-.search input:focus {
-  border: 2px solid darkblue;
-}
-
-.search input {
-  text-indent: 20px;
-}
-
-.search .fa-search {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  font-size: 27px;
-}
-
-.search .fa-search {
-  left: auto;
-  right: 10px;
-}
-
-/* Searchbar component css  ends here*/
-
-/* movie content */
-.moviecontent {
-  margin-left: 400px;
-  margin-right: 400px;
-}
-
-/* movie content ends here */
-
-/* movie carousel  */
-
-#owl-1 .card{
-  background-color: transparent !important;
-  text-decoration: none;
-}
-#owl-1 .card:hover{
-        box-shadow: 0 0 10px 5px #dc3545;
-}
-#owl-1 .card-title{
-  text-decoration: none !important;
-}
-
-#moviecard .card{
-  background-color: transparent !important;
-  text-decoration: none;
-}
-#moviecard .card:hover{
-  box-shadow: 0 0 10px 5px #dc3545;
-
-}
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 
-/* .owl-carousel .owl-nav .owl-prev:before{
-    content: "\E5CB";
-    font-size: 4rem;
-    margin-left:16px;
-    position: absolute;
-	  top: 40%;
-    left: 0px;
-    height: auto;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.1),
-                 0px 0px 8px rgba(0,0,0,0.05),
-                 0px 0px 12px rgba(0,0,0,0.05);
-} */
-/* .owl-carousel .owl-nav .owl-next:after{
-    font-family: "Material Icons";
-    content: "\E5CC";
-    font-size: 4rem;
-    margin-right: 16px;
-    position: absolute;
-	  top: 40%;
-    right: 0px;
-    height: 100%;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.1),
-                 0px 0px 8px rgba(0,0,0,0.05),
-                 0px 0px 12px rgba(0,0,0,0.05);
-} */
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-
-
-/* movie carousel ends here */
-
-
-/* singlemovie page  */
-
-#singlemovie{
-  background-color: #435B66;
-}
-
-#moviebox .card{
-    background-color: #1B2430;
-}
-#moviebox .card img{
-  width: 300px;
-}
-
-#moviebox .starrate{
-  margin-top: 50px;
-}
-#commentbox{
-  background-color: #435B66;  
-}
-#commentbox input{
-  background-color: var(--blue);
-}
-#commentbox textarea{
-  background-color: var(--blue);  
-}
-#commentbox input:first-child{
-  height: 200px;
-  /* width: 100px !importan t; */
-}
-#commentbox button{
-  background-color: var(--blue);
-}
-
-/* singlemovie page ends here */
-
-/* media */
-
-@media only screen and (min-width: 280px) and (max-width: 768px) {
   body {
-    background-color: lightblue;
+    /* background-color: var(--blue); */
+    background-color: black;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
+
   .btngroup {
-    margin-left:  35px;
-    margin-right: 0px;
+    margin-left: 500px;
+    margin-right: 450px;
   }
-  
+
   /* Searchbar component css */
   .search {
     position: relative;
     color: #aaa;
     font-size: 16px;
   }
-  
+
   .search {
     display: inline-block;
   }
-  
+
   .search input {
-    width: 300px;
+    width: 900px;
     height: 45px;
-    border: 2px solid black;
+    border: 2px solid blac9E9FA5k;
     outline: none;
     border-radius: 5px;
-  
+
   }
-  
+
   .search input:focus {
     border: 2px solid darkblue;
   }
-  
+
   .search input {
     text-indent: 20px;
   }
-  
+
   .search .fa-search {
     position: absolute;
     top: 10px;
@@ -202,42 +53,213 @@ body {
     cursor: pointer;
     font-size: 27px;
   }
-  
+
   .search .fa-search {
     left: auto;
     right: 10px;
   }
+
+  /* Searchbar component css  ends here*/
+  /* movie slider  */
+  .swiper {
+    width: 76vw;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: black;
+    width: 225px !important;
+    text-decoration: none !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 225px;
+    /* height: 200px; */
+    object-fit: cover;
+  }
+
+  .SwiperSlide {
+    width: 100px !important;
+    text-decoration: none;
+  }
+
+  .movietitle {
+    text-decoration: none;
+    color: #A6A9B6;
+    margin-top: 10px !important;
+  }
+
+  .movietitle:hover {
+    color: #5C7AEA;
+  }
+
+  /* movie slider ends here */
+
+
   /* movie content */
   .moviecontent {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 500px;
+    margin-right: 200px;
   }
-  /* movie carousel  */
-
-#owl-1 .card{
-  background-color: transparent !important;
-  text-decoration: none;
-}
-#owl-1 .card:hover{
-        box-shadow: 0 0 10px 5px #dc3545;
-}
-#owl-1 .card-title{
-  text-decoration: none !important;
-}
-
-#moviecard .card{
-  background-color: transparent !important;
-  text-decoration: none;
-}
-#moviecard .card:hover{
-  box-shadow: 0 0 10px 5px #dc3545;
-
-}
-#moviecard{
-  /* width: 200px; */
-  display: flex;
-}
-  .picbox{
-    width: 145px;
+  .moviecontent1{
+    margin-left: 500px;
+    margin-right: 200px;
   }
-}
+
+  /* movie content ends here */
+
+
+  /* singlemovie page  */
+
+  #singlemovie {
+    background-color: black;
+  }
+
+  #moviebox .card {
+    background-color: #1B2430;
+  }
+
+  #moviebox .card img {
+    width: 300px;
+  }
+
+  #moviebox .starrate {
+    margin-top: 50px;
+  }
+
+  /* singlemovie page ends here */
+
+  /* moviecards  */
+
+  #moviecards .card-body {
+    background-color: black !important;
+    
+  }
+
+  #moviecards .card-body a {
+    text-decoration: none;
+  }
+
+  #moviecards .card {
+    text-decoration: none;
+    border: none !important;
+  }
+
+  #moviecards .card h5 {
+    color: #A6A9B6;
+  }
+  #moviecards .card h5:hover{
+    color: #5C7AEA;
+  }
+
+  /* moviecards ends here */
+
+
+  /* media */
+
+  @media only screen and (min-width: 280px) and (max-width: 768px) {
+
+    .btngroup {
+      margin-left: 35px;
+      margin-right: 0px;
+    }
+
+    /* Searchbar component css */
+    .search {
+      position: relative;
+      color: #aaa;
+      font-size: 16px;
+    }
+
+    .search {
+      display: inline-block;
+    }
+
+    .search input {
+      width: 300px;
+      height: 45px;
+      border: 2px solid black;
+      outline: none;
+      border-radius: 5px;
+
+    }
+
+    .search input:focus {
+      border: 2px solid darkblue;
+    }
+
+    .search input {
+      text-indent: 20px;
+    }
+
+    .search .fa-search {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+      font-size: 27px;
+    }
+
+    .search .fa-search {
+      left: auto;
+      right: 10px;
+    }
+
+    /* movie content */
+    .moviecontent {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .moviecontent1{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    /* movie content ends here */
+    /* movie slider  */
+  
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: black;
+    width: 145px !important;
+    text-decoration: none !important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 140px;
+    /* height: 200px; */
+    object-fit: cover;
+  }
+
+  .SwiperSlide {
+    width: 100px !important;
+    text-decoration: none;
+  }
+
+  .movietitle {
+    text-decoration: none;
+    color: #A6A9B6;
+    margin-top: 10px !important;
+  }
+
+  .movietitle:hover {
+    color: #5C7AEA;
+  }
+  /* movie slider ends here */
+  #moviecards .card {
+    text-decoration: none;
+    border: none !important;
+  }
+  }

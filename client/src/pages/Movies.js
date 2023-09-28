@@ -1,11 +1,12 @@
 import React from "react";
-import MovieCard2 from "../components/MovieCard2";
+import MovieSlider from "../components/MovieSlider";
+import MovieCard from "../components/MovieCard";
 
 const Movies = () => {
   return (
     <>
-      <div className="bg-blue d-flex flex-column text-center pt-3 ">
-        <p className="text-light">
+      <div className="bg-blue d-flex flex-column text-center pt-3 container">
+        <p className="text-light moviecontent1">
           <span className="text-danger">FunZilla</span> – The Best Place to
           Watch or Download Free Movies and WebSeries Online
         </p>
@@ -18,7 +19,8 @@ const Movies = () => {
           <span className="text-danger">FunZilla</span> is the exact place for
           that! Start by Searching or by Navigating the
           <span className="text-danger">FunZilla</span> Top Menu, You will find
-          something to Watch in a matter of seconds!
+          somthing to watch in a matter of seconds!
+          ..."
         </p>
       </div>
       <section>
@@ -28,22 +30,31 @@ const Movies = () => {
             Watched
           </h3>
         </div>
-        <div>
-        <MovieCard2/>
+        <div className="container">
+        <MovieSlider/>
         </div>
       </section>
       <section>
-      <div className="ms-4 ">
+        <div className="ms-4">
           <h3 className="text-light mb-4">
-            <span className="fw-bold text-danger">| </span>Latest - Most
+            <span className="fw-bold text-danger">| </span>Featured - Most
             Watched
           </h3>
-        <MovieCard2/>
-
         </div>
-
-          <div className="">
-          </div>
+        <div className="container ms-4 me-4">
+        <MovieCard/>
+        </div>
+      </section>
+      <section>
+        <div className="ms-4 pt-4">
+          <h3 className="text-light mb-4">
+            <span className="fw-bold text-danger">| </span>Featured - Most
+            Watched
+          </h3>
+        </div>
+        <div className="container ms-4 me-4">
+        <MovieCard/>
+        </div>
       </section>
     </>
   );

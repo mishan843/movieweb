@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
-import MovieCard2 from "../components/MovieCard2";
 import MovieBox from "../components/MovieBox";
 import moviess from "../assets/moviess.jpeg";
 import { BsFire } from "react-icons/bs";
 import { AiFillThunderbolt, AiTwotonePushpin } from "react-icons/ai";
+import MovieCard from "../components/MovieCard";
 
 const SingleMovie = () => {
   return (
@@ -74,13 +74,13 @@ const SingleMovie = () => {
                 world of drugs and crime and ascends to power in the world.
               </p>
             </div>
-            <div>
+            <div className="container">
               <span className="text-danger fs-5 px-3">ScreenShots:</span>
               <div className="">
-                <img src={moviess} alt="" className="img-fluid px-4 p-2" />
-                <img src={moviess} alt="" className="img-fluid px-4 p-2" />
-                <img src={moviess} alt="" className="img-fluid px-4 p-2" />
-                <img src={moviess} alt="" className="img-fluid px-4 p-2" />
+                <img src={moviess} alt="" className="w-75 px-4 p-2" />
+                <img src={moviess} alt="" className="w-75 px-4 p-2" />
+                <img src={moviess} alt="" className="w-75 px-4 p-2" />
+                <img src={moviess} alt="" className="w-75 px-4 p-2" />
               </div>
             </div>
             <h3 className="mb-5 pt-4 pb-3 p-3 border-bottom">
@@ -90,7 +90,7 @@ const SingleMovie = () => {
             <h4 className="text-center">
               Season 1 Hindi-English 480p x264 Esubs [200MB]
             </h4>
-            <div className="d-flex justify-content-center p-2 px-2">
+            <div className="d-flex flex-wrap justify-content-center p-2 px-2">
               <button className="btn bg-dark rounded-3 px-4 py-2 text-light d-flex align-items-center">
                 <BsFire className="text-warning me-2" />
                 G-Direct
@@ -107,7 +107,7 @@ const SingleMovie = () => {
             <h4 className="text-center pt-4">
               Season 1 Hindi-English 480p x264 Esubs [200MB]
             </h4>
-            <div className="d-flex justify-content-center p-2 px-2">
+            <div className="d-flex flex-wrap justify-content-center p-2 px-2">
               <button className="btn bg-dark rounded-3 px-4 py-2 text-light d-flex align-items-center">
                 <BsFire className="text-warning me-2" />
                 G-Direct
@@ -124,7 +124,7 @@ const SingleMovie = () => {
             <h4 className="text-center pt-4">
               Season 1 Hindi-English 480p x264 Esubs [200MB]
             </h4>
-            <div className="d-flex justify-content-center p-2 px-2">
+            <div className="d-flex flex-wrap justify-content-center p-2 px-2">
               <button className="btn bg-dark rounded-3 px-4 py-2 text-light d-flex align-items-center">
                 <BsFire className="text-warning me-2" />
                 G-Direct
@@ -141,16 +141,16 @@ const SingleMovie = () => {
           </div>
         </div>
         <div>
-          <div className="w-50 border rounded-3 bg-danger py-2 px-3 mt-5">
+          <div className="img-fluid border rounded-3 bg-danger py-2 px-3 mt-5">
             Please Do not use VPN for Downloading Movies from our site.
           </div>
-          <div className="w-50 border rounded-3 bg-success py-2 px-3 mt-3">
+          <div className="img-fluid border rounded-3 bg-success py-2 px-3 mt-3">
             Click on the Above Download Button to Download file.
           </div>
-          <div className="w-50 border rounded-3 bg-warning py-2 px-3 mt-3">
+          <div className="img-fluid border rounded-3 bg-warning py-2 px-3 mt-3">
             If you find any broken link then Report to us.
           </div>
-          <div className="w-50 border rounded-3 bg-primary py-2 px-3 mt-3">
+          <div className="img-fluid border rounded-3 bg-primary py-2 px-3 mt-3">
             Commment your Query and Requests below In the Comment Box. 
           </div>
           </div>
@@ -164,22 +164,8 @@ const SingleMovie = () => {
           </h3>
         </div>
         <div>
-          <MovieCard2 />
+          <MovieCard/>
         </div>
-      </section>
-      <section id="commentbox" className="container bg-">
-          <div className="mt-5 ">
-            <h3 className="text-light text-uppercase p-3">Add Comment</h3>
-          </div>
-          <div>
-            <form action="" className="d-flex flex-column p-2 ">
-              <textarea name="" id="" cols="30" rows="10" className="text-light px-2 py-2 border-0 rounded-0 w-50"  ></textarea>
-              <input type="email" className="w-50 px-2 py-2 mt-3 text-light" placeholder="Enter your Email" />
-              <input type="text" className="w-50 px-2 py-2 mt-3 text-light" placeholder="Enter your Name" />
-
-              <button className="btn rounded-0 w-25 px-2 mt-3 text-light shadow-light">Submit Comment</button>
-            </form>
-          </div>
       </section>
     </div>
   );
