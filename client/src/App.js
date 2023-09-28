@@ -7,7 +7,7 @@ import SingleMovie from "./pages/SingleMovie";
 
 function App() {
   return (
-    <div className="">
+    <div className="container">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

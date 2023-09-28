@@ -5,13 +5,13 @@ import MovieCard from "../components/MovieCard";
 const Movies = () => {
   return (
     <>
-      <div className="bg-blue d-flex flex-column text-center pt-3 container">
-        <p className="text-light moviecontent1">
+      <div className="bg-blue d-flex flex-column text-center pt-3">
+        <p className="text-light">
           <span className="text-danger">FunZilla</span> – The Best Place to
           Watch or Download Free Movies and WebSeries Online
         </p>
 
-        <p className="text-light moviecontent">
+        <p className="text-light">
           Movie and WebSeries fans now have a place, where they can find all
           their favorite Flicks. Would you like to get an exclusive access to
           all the major blockbusters of the recent years? Everybody wants to see
@@ -30,7 +30,7 @@ const Movies = () => {
             Watched
           </h3>
         </div>
-        <div className="container">
+        <div>
         <MovieSlider/>
         </div>
       </section>
@@ -41,7 +41,7 @@ const Movies = () => {
             Watched
           </h3>
         </div>
-        <div className="container ms-4 me-4">
+        <div className="ms-4 me-4">
         <MovieCard/>
         </div>
       </section>
@@ -52,7 +52,7 @@ const Movies = () => {
             Watched
           </h3>
         </div>
-        <div className="container ms-4 me-4">
+        <div className="ms-4 me-4">
         <MovieCard/>
         </div>
       </section>

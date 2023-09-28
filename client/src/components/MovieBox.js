@@ -4,13 +4,13 @@ import {AiFillStar} from 'react-icons/ai'
 const MovieBox = () => {
   return (
     <div>
-      <section id="moviebox" className="container pb-5">
+      <section id="moviebox" className="pb-5">
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
               <img
                 src={movie1}
-                className="img-fluid rounded-start p-3"
+                className="w-75 rounded-start p-3"
                 alt="..."
               />
             </div>

@@ -17,14 +17,26 @@ const SearchBar = () => {
           All WebSeries
         </button>
         <button className="btn bg-secondary text-dark rounded-pill pt-2 px-3">
-         18+ Movies
+          18+ Movies
         </button>
         <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
-         Animated
+          Animated
         </button>
-        <div className="search mt-3 shadow-lg img-fluid">
-            <BiSearch className="fa fa-search"/>
-          <input placeholder="Search Movies/Webseries..." />
+        <div className="input-group mb-3 mt-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Search Movies and WebSeries"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            className="btn bg-transparent border"
+            type="button"
+            id="button-addon2"
+          >
+            <BiSearch className="fs-5 text-white"/>
+          </button>
         </div>
       </div>
     </div>

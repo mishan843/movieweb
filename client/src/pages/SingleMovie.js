@@ -10,7 +10,7 @@ const SingleMovie = () => {
   return (
     <div>
       <Layout />
-      <section id="singlemovie" className="container">
+      <section id="singlemovie">
         <div className="mt-5 text-light">
           <div className="">
             <h3 className="mb-0 pt-4 pb-3 p-3">
@@ -53,7 +53,7 @@ const SingleMovie = () => {
                   Release Year: 2008 Size: 200MB & 350MB & 480MB & 950MB & 1.2GB
                   (Each Episode)
                 </li>
-                <li>
+                <li>secondary
                   Quality: 480p, 720p 10Bit x265/ x264 & 1080p 10Bit x265/ x264
                   – BluRay
                 </li>
@@ -74,14 +74,14 @@ const SingleMovie = () => {
                 world of drugs and crime and ascends to power in the world.
               </p>
             </div>
-            <div className="container">
+            <div>
               <span className="text-danger fs-5 px-3">ScreenShots:</span>
               <div className="">
                 <img src={moviess} alt="" className="w-75 px-4 p-2" />
                 <img src={moviess} alt="" className="w-75 px-4 p-2" />
                 <img src={moviess} alt="" className="w-75 px-4 p-2" />
                 <img src={moviess} alt="" className="w-75 px-4 p-2" />
-              </div>
+              </div> className="container"
             </div>
             <h3 className="mb-5 pt-4 pb-3 p-3 border-bottom">
               Download Breaking Bad (Season 1-2) [S02E08 Added] Dual Audio
@@ -142,7 +142,7 @@ const SingleMovie = () => {
         </div>
         <div>
           <div className="img-fluid border rounded-3 bg-danger py-2 px-3 mt-5">
-            Please Do not use VPN for Downloading Movies from our site.
+            Please Do not use VPN for Downloading Movies fromimg-fluid our site.
           </div>
           <div className="img-fluid border rounded-3 bg-success py-2 px-3 mt-3">
             Click on the Above Download Button to Download file.
@@ -156,7 +156,7 @@ const SingleMovie = () => {
           </div>
       </section>
 
-      <section className="container">
+      <section>
         <div className="">
           <h3 className="text-light mb-4 mt-5">
             <span className="fw-bold text-danger">| </span>Featured - Most

@@ -15,7 +15,7 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 const MovieSlider = () => {
   return (
-    <div className="container">
+    <div>
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
