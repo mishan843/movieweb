@@ -1,47 +1,48 @@
 import React from "react";
-import movie1 from "../assets/movie1.jpeg";
+import movie2 from "../assets/movie2.jpeg";
 import { Link } from "react-router-dom";
 
 const MovieCard = () => {
+
   return (
     <div id="moviecards">
-      <div className="row row-cols-1 row-cols-md-3 g-3">
-        <div className="col-lg-2 col-md-4 col-6">
-          <Link to={'/singlemovie'} className="card w-100 shadow-0 border-0">
-            <img src={movie1} className="card-img-top" alt="..." />
+      <div className="row row-cols-1 row-cols-md-3 ">
+        <div className="col-lg-2 col-md-4 col-4">
+          <Link to={'/singlemovie'} className="card border-0">
+            <img src={movie2} className="card-img-top" alt="..." />
             <div className="card-body">
-              <Link className="text-center">
-                <h5>Movie Title</h5>
+              <Link to='/singlemovie' className="text-center p-0">
+                <p>Movie Title Lorem ipsum dolor sit amet,</p>
                 </Link>
             </div>
           </Link>
         </div>
-        <div className="col-lg-2 col-md-4 col-6">
-          <Link to={'/singlemovie'} className="card w-100 border-0">
-            <img src={movie1} className="card-img-top" alt="..." />
+        <div className="col-lg-2 col-md-4 col-4">
+          <Link to={'/singlemovie'} className="card border-0">
+            <img src={movie2} className="card-img-top" alt="..." />
             <div className="card-body">
               <Link className="text-center">
-                <h5>Movie Title</h5>
+                <p>Movie Title</p>
                 </Link>
             </div>
           </Link>
         </div>
-        <div className="col-lg-2 col-md-4 col-6">
-          <Link to={'/singlemovie'} className="card w-100 border-0">
-            <img src={movie1} className="card-img-top" alt="..." />
+        <div className="col-lg-2 col-md-4 col-4">
+          <Link to={'/singlemovie'} className="card border-0">
+            <img src={movie2} className="card-img-top" alt="..." />
             <div className="card-body">
               <Link className="text-center">
-                <h5>Movie Title</h5>
+                <p>Movie Title</p>
                 </Link>
             </div>
           </Link>
         </div>
-        <div className="col-lg-2 col-md-4 col-6">
-          <Link to={'/singlemovie'} className="card w-100 border-0">
-            <img src={movie1} className="card-img-top" alt="..." />
+        <div className="col-lg-2 col-md-4 col-4">
+          <Link to={'/singlemovie'} className="card border-0">
+            <img src={movie2} className="card-img-top" alt="..." />
             <div className="card-body">
               <Link className="text-center">
-                <h5>Movie Title</h5>
+                <p>Movie Title</p>
                 </Link>
             </div>
           </Link>

@@ -5,7 +5,7 @@ const MovieBox = () => {
   return (
     <div>
       <section id="moviebox" className="pb-5">
-        <div className="card mb-3">
+        <div className="card w-75 mb-3">
           <div className="row g-0">
             <div className="col-md-4">
               <img

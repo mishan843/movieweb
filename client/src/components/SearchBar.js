@@ -4,19 +4,19 @@ const SearchBar = () => {
   return (
     <div className="bg-blue">
       <div className="btngroup d-flex flex-wrap justify-content-center align-items-center pt-5 gap-2">
-        <button className="btn bg-danger text-dark rounded-pill pt-2 px-3">
+        <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
           Bollywood
         </button>
-        <button className="btn bg-success text-dark rounded-pill pt-2 px-3">
+        <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
           Hollywood
         </button>
-        <button className="btn bg-warning text-dark rounded-pill pt-2 px-3">
+        <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
           All Movies
         </button>
-        <button className="btn bg-primary text-dark rounded-pill pt-2 px-3">
+        <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
           All WebSeries
         </button>
-        <button className="btn bg-secondary text-dark rounded-pill pt-2 px-3">
+        <button className="btn bg-info text-dark rounded-pill pt-2 px-3">
           18+ Movies
         </button>
         <button className="btn bg-info text-dark rounded-pill pt-2 px-3">

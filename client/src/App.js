@@ -7,7 +7,7 @@ import SingleMovie from "./pages/SingleMovie";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container d-flex flex-column justify-content-center align-items-center">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

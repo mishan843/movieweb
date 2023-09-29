@@ -1,5 +1,4 @@
 import React from "react";
-import MovieSlider from "../components/MovieSlider";
 import MovieCard from "../components/MovieCard";
 
 const Movies = () => {
@@ -25,28 +24,6 @@ const Movies = () => {
       </div>
       <section>
         <div className="ms-4">
-          <h3 className="text-light mb-4">
-            <span className="fw-bold text-danger">| </span>Featured - Most
-            Watched
-          </h3>
-        </div>
-        <div>
-        <MovieSlider/>
-        </div>
-      </section>
-      <section>
-        <div className="ms-4">
-          <h3 className="text-light mb-4">
-            <span className="fw-bold text-danger">| </span>Featured - Most
-            Watched
-          </h3>
-        </div>
-        <div className="ms-4 me-4">
-        <MovieCard/>
-        </div>
-      </section>
-      <section>
-        <div className="ms-4 pt-4">
           <h3 className="text-light mb-4">
             <span className="fw-bold text-danger">| </span>Featured - Most
             Watched

@@ -13,52 +13,6 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  
-
-  /* Searchbar component css */
-  
-
-  /* Searchbar component css  ends here*/
-  /* movie slider  */
-  .swiper {
-    width: 76vw;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: black;
-    width: 150px !important;
-    text-decoration: none !important;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 150px;
-    /* height: 200px; */
-    object-fit: cover;
-  }
-
-  .SwiperSlide {
-    width: 100px !important;
-    text-decoration: none;
-  }
-
-  .movietitle {
-    text-decoration: none;
-    color: #A6A9B6;
-    margin-top: 10px !important;
-  }
-
-  .movietitle:hover {
-    color: #5C7AEA;
-  }
-
-  /* movie slider ends here */
 
 
   /* singlemovie page  */
@@ -81,6 +35,7 @@
 
   #moviecards .card-body {
     background-color: black !important;
+    padding: 0 !important;
     
   }
 
@@ -93,10 +48,10 @@
     border: none !important;
   }
 
-  #moviecards .card h5 {
+  #moviecards .card p {
     color: #A6A9B6;
   }
-  #moviecards .card h5:hover{
+  #moviecards .card p:hover{
     color: #5C7AEA;
   }
 
@@ -106,49 +61,6 @@
   /* media */
 
   @media only screen and (min-width: 280px) and (max-width: 768px) {
-
-    .btngroup {
-      margin-left: 35px;
-      margin-right: 0px;
-    }
-
-    /* movie slider  */
-  
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: black;
-    width: 145px !important;
-    text-decoration: none !important;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 140px;
-    /* height: 200px; */
-    object-fit: cover;
-  }
-
-  .SwiperSlide {
-    width: 100px !important;
-    text-decoration: none;
-  }
-
-  .movietitle {
-    text-decoration: none;
-    color: #A6A9B6;
-    margin-top: 10px !important;
-  }
-
-  .movietitle:hover {
-    color: #5C7AEA;
-  }
-  /* movie slider ends here */
   #moviecards .card {
     text-decoration: none;
     border: none !important;
