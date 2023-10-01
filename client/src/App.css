@@ -85,7 +85,7 @@ font-family: 'Pridi', serif;
       word-wrap: break-word;
     }
     #moviecards .zoom {
-      border-image: linear-gradient(#d7d94b, red, #d7d94b);
+      border: linear-gradient(#d7d94b, red, #d7d94b);
       border-width: 4px;
       border-style: solid;
     }
