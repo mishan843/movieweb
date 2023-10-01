@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@400;500;600&display=swap');
 
 
   * {
@@ -9,8 +9,7 @@
   body {
     /* background-color: var(--blue); */
     background-color: black;
-    font-family: 'Mukta', sans-serif;
-    font-family: 'Roboto', sans-serif;
+font-family: 'Pridi', serif;
   }
 
 
@@ -34,25 +33,31 @@
   /* moviecards  */
 
   #moviecards .card-body {
-    background-color: black !important;
-    padding: 0 !important;
-    
+    margin-top: 15px;
+    background-color: #3C4048 !important;
+    padding: 5px !important;
   }
 
   #moviecards .card-body a {
     text-decoration: none;
   }
-
+  #moviecards .card-body .movietitlelink:hover{
+    color: #BBBFCA !important; 
+  }
   #moviecards .card {
     text-decoration: none;
     border: none !important;
+    background-color: black !important;
   }
 
-  #moviecards .card p {
-    color: #A6A9B6;
+  #moviecards .zoom {
+    border-image: linear-gradient(#d7d94b, #e61a08, #d7d94b) 30;
+    border-width: 4px;
+    border-style: solid;
   }
-  #moviecards .card p:hover{
-    color: #5C7AEA;
+
+  #moviecards .zoom:hover {
+    transform: scale(1.05);
   }
 
   /* moviecards ends here */
@@ -61,13 +66,24 @@
   /* media */
 
   @media only screen and (min-width: 280px) and (max-width: 768px) {
-  #moviecards .card {
-    text-decoration: none;
-    border: none !important;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-  }
+    #moviecards .card {
+      text-decoration: none;
+      border: none !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+    }
+    #moviecards .zoom {
+      border-image: linear-gradient(#d7d94b, red, #d7d94b);
+      border-width: 4px;
+      border-style: solid;
+    }
+    #moviecards .card-body {
+      margin-top: 7px;
+      background-color: #3C4048 !important;
+      font-size: 8px;
+      padding: 2px !important;
+    }
   }
