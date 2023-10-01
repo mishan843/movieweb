@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "../components/Layout";
 import MovieBox from "../components/MovieBox";
 import moviess from "../assets/moviess.jpeg";
 import { BsFire } from "react-icons/bs";
@@ -8,7 +7,6 @@ import { AiFillThunderbolt, AiTwotonePushpin } from "react-icons/ai";
 const SingleMovie = () => {
   return (
     <div>
-      <Layout />
       <section id="singlemovie" className="me-0">
         <div className="mt-5 text-light">
           <div className="d-flex flex-column justify-content-center align-items-center">

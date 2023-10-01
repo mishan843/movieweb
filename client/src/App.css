@@ -60,8 +60,17 @@ font-family: 'Pridi', serif;
     transform: scale(1.05);
   }
 
+  #moviebox .zoom{
+    border-image: linear-gradient(#d7d94b, #e61a08, #d7d94b) 30;
+    border-width: 4px;
+    border-style: solid;
+  }
   /* moviecards ends here */
+  /* footer */
 
+
+
+  /* footer ends here */
 
   /* media */
 

@@ -6,11 +6,11 @@ const MovieBox = () => {
     <div>
       <section id="moviebox" className="pb-5">
         <div className="card w-75 mb-3">
-          <div className="row g-0">
-            <div className="col-md-4">
+          <div className="row">
+            <div className="col-md-4 px-4 py-4">
               <img
                 src={movie1}
-                className="w-75 rounded-start p-3"
+                className="w-75 rounded-start zoom"
                 alt="..."
               />
             </div>
