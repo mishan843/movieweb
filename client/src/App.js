@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Movies />} />
             <Route path="/webseries" element={<WebSeries />} />
-            <Route path="/singlemovie" element={<SingleMovie />} />
+            <Route path="/singlemovie/:id" element={<SingleMovie />} />
             <Route path="/dmcapolicy" element={<DmcaPolicy />} />
             <Route path="/howtodownload" element={<HowToDownload />} />
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />

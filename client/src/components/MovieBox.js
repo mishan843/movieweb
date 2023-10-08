@@ -1,7 +1,11 @@
 import React from "react";
 import movie1 from "../assets/movie1.jpeg";
 import {AiFillStar} from 'react-icons/ai'
-const MovieBox = () => {
+const MovieBox = (props) => {
+
+  const singleData = props.singleData ? props.singleData : [];
+
+
   return (
     <div>
       <section id="moviebox" className="pb-5">
@@ -17,7 +21,7 @@ const MovieBox = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title border-bottom pb-2 text-light mt-5">
-                  Breaking Bad (2008–2013) 49 min|Crime, Drama, Thriller|20 Jan
+                  {singleData?.name} {singleData?.description}(2008–2013) 49 min|Crime, Drama, Thriller|20 Jan
                   2008
                 </h5>
                 <p className="card-text text-light border-bottom pb-2">

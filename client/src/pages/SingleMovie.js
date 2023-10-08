@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MovieBox from "../components/MovieBox";
 import moviess from "../assets/moviess.jpeg";
 import { BsFire } from "react-icons/bs";
 import { AiFillThunderbolt, AiTwotonePushpin } from "react-icons/ai";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation } from "react-router-dom";
+import { getMovie } from "../features/movieSlice";
 
 const SingleMovie = () => {
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const movieId = location.pathname.split("/")[2];
+
+  useEffect(() => {
+    dispatch(getMovie(movieId));
+    // eslint-disable-next-line
+  }, []);
+
+  const movieState = useSelector((state) => state?.movie?.singleMovie?.data);
+  console.log(movieState?.screenshots[0]);
+
   return (
     <div>
       <section id="singlemovie" className="me-0">
         <div className="mt-5 text-light">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <h3 className="mb-0 pt-4 pb-3 p-3">
-              Download Breaking Bad (Season 1-2) [S02E08 Added] Dual Audio
-              Hindi-English BluRay 480p [200MB] || 720p [320MB] || 1080p [1GB]
+              Download {movieState?.name} {movieState?.description}(Season 1-2)
+              [S02E08 Added] Dual Audio Hindi-English BluRay 480p [200MB] ||
+              720p [320MB] || 1080p [1GB]
             </h3>
             <p className="p-3">
               Download Breaking Bad (Season 1-2) 2008 All Episodes
@@ -35,7 +51,7 @@ const SingleMovie = () => {
               Download Download Breaking Bad S01-S02 Hindi Dubbed 480p, 720p &
               1080p - <span className="text-danger">FunZilla</span>
             </h3>
-            <MovieBox />
+            <MovieBox singleData={movieState ? movieState : []} />
 
             <div>
               <span className="text-danger fs-4 px-4 my-1">Series Info:</span>
@@ -61,23 +77,29 @@ const SingleMovie = () => {
                 <br />
                 Walter White, a New Mexico chemistry teacher, is diagnosed with
                 Stage III cancer and given a prognosis of only two years left to
-                live. He becom{" "}
-              className="container"es filled with a sense of fearlessness and an
-                unrelenting desire to secure his family’s financial future at
-                any cost as he enters the dangerous world of drugs and crime.
-                White is diagnosed with Stage III cancer and given a prognosis
-                of two years left to live. With a new sense of fearlessness
-                based on his medical prognosis, and a desire to secure his
-                family’s financial security, White chooses to enter a dangerous
-                world of drugs and crime and ascends to power in the world.
+                live. He becom className="container"es filled with a sense of
+                fearlessness and an unrelenting desire to secure his family’s
+                financial future at any cost as he enters the dangerous world of
+                drugs and crime. White is diagnosed with Stage III cancer and
+                given a prognosis of two years left to live. With a new sense of
+                fearlessness based on his medical prognosis, and a desire to
+                secure his family’s financial security, White chooses to enter a
+                dangerous world of drugs and crime and ascends to power in the
+                world.
               </p>
             </div>
             <div>
               <span className="text-danger fs-5 px-3">ScreenShots:</span>
               <div className="">
-                <img src={moviess} alt="" className="w-75 px-4 p-2" />
-                <img src={moviess} alt="" className="w-75 px-4 p-2" />
-                <img src={moviess} alt="" className="w-75 px-4 p-2" />
+                {movieState?.screenshots?.map((image, index) => {
+                  return (
+                    <img
+                      src={movieState?.screenshots}
+                      alt="screenshots"
+                      className="w-75 px-4 p-2"
+                    />
+                  );
+                })}
                 <img src={moviess} alt="" className="w-75 px-4 p-2" />
               </div>
             </div>

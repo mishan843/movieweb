@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import MovieCard from "../components/MovieCard";
+import { useDispatch, useSelector } from "react-redux";
+import { getMovies } from "../features/movieSlice";
 
 const Movies = () => {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getMovies())
+    // eslint-disable-next-line
+  }, [])
+
+  const movieState = useSelector((state) => state.movie.movies.data);
+
   return (
     <>
       <section>
@@ -12,8 +24,9 @@ const Movies = () => {
           </h3>
         </div>
         <div className="ms-4 me-4">
-        <MovieCard/>
+          <MovieCard data={movieState ? movieState : []} />
         </div>
+        
       </section>
     </>
   );
